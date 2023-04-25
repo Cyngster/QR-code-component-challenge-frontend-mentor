@@ -1,0 +1,83 @@
+@import 'colors';
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+    background-color: $Light-gray;
+}
+
+body {
+	font-family: 'Outfit', sans-serif;
+	font-size: 15px;
+	
+	
+    
+}
+
+.card {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: $White;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 20px;
+	border-radius: 25px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+	
+
+	img {
+		
+		max-width: 400px;
+        border-radius: 10px;
+		
+	}
+
+
+	
+}
+
+.card-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 400px;
+	text-align: center;
+	padding: 10% 5%;
+
+	p{
+		margin: 5% 10%;
+		color: $Grayish-blue; 
+		font-size: 15px;
+
+	}
+}
+
+
+.attribution {
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 11px;
+	text-align: center;
+	
+
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}
+
+@media (max-width: 375px){
+	.card{transform: scale(0.7)
+		translate(-70%,-70%);}
+	
+
+}
