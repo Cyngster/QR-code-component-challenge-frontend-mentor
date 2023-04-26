@@ -10,55 +10,49 @@ html {
 
 body {
   font-family: "Outfit", sans-serif;
-  font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+main {
+  margin: auto 0;
   background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  border-radius: 25px;
+  max-width: 20rem;
+  padding: 1rem;
+  border-radius: 1.25rem;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
-.card img {
-  max-width: 400px;
-  border-radius: 10px;
+main img {
+  max-width: 100%;
+  border-radius: 0.75rem;
 }
-
-.card-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 400px;
-  text-align: center;
-  padding: 10% 5%;
+main h1 {
+  color: hsl(218, 44%, 22%);
+  font-size: 1.25rem;
 }
-.card-text p {
-  margin: 5% 10%;
-  color: hsl(220, 15%, 55%);
+main p {
   font-size: 15px;
 }
 
-.attribution {
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  font-size: 11px;
+.card-text {
+  margin: 1rem 0.75rem 0.75rem 0.75rem;
   text-align: center;
+  font-size: 0.9375rem;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.card-text p {
+  margin-top: 1rem;
+  color: hsl(220, 15%, 55%);
 }
 
-@media (max-width: 375px) {
-  .card {
-    transform: scale(0.7) translate(-70%, -70%);
-  }
+footer {
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */
